@@ -1,4 +1,4 @@
-package com.example.android.miwok;
+package com.example.android.multiscreen;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
