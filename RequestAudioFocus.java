@@ -66,3 +66,9 @@ import android.support.v7.app.AppCompatActivity;
       // dont forgot to release mediaplayer and audioplayer whenever no need
 
 
+
+
+
+// ONE LINE TOAST MESSAGE
+
+Toast.makeText(getApplicationContext(), "Hello toast!!", Toast.LENGTH_LONG).show();
