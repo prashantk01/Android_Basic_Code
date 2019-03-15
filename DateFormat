@@ -1,0 +1,16 @@
+        The Time in millisecond (getting from Api's ) represents UnixTime and it's describes a time as the number of milliseconds that have passed since midnight 1970 in England
+        we need to require convert this time in desired UI as "yyyy-MM-dd"," HH:mm:ss".
+        i) Store time in long primitive data type. eg. long timeInMilliseconds.
+        ii) First convert the time in milliseconds into a Date object by calling the Date constructor.
+               Date dateObject = new Date(timeInMilliseconds);
+        iii) Then we can initialize a SimpleDateFormat instance and configure it to provide a more readable representation according to the given format.
+               SimpleDateFormat dateFormatter = new SimpleDateFormat("MMM DD, yyyy");
+               String dateToDisplay = dateFormatter.format(dateObject);
+                        or in case of time
+               SimpleDateFormat timeFormat = new SimpleDateFormat("h:mm a");         
+               String timeToDisplay = timeFormat.format(dateObject);
+        iv) findview to display date in xmlfile and settext as dateToDisplay or timeToDisplay.
+        you may require to import these packages and classes if androidstudio is not recognising ..
+        import java.text.SimpleDateFormat;
+        import java.util.Date;
+        
